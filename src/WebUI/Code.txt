@@ -1,0 +1,10 @@
+FireBase Authentication
+
+1) npm install firebase
+2) ng add @angular/fire
+3) write your code index.js
+4)firebase deploy --only functions
+
+
+
+Scaffold-DbContext -Connection Name=MsSql Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

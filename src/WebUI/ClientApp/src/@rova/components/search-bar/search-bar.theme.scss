@@ -1,0 +1,11 @@
+@mixin rova-search-bar-theme($theme) {
+
+    $background: map-get($theme, background);
+
+    .rova-search-bar {
+
+        &.expanded {
+            background-color: map-get($background, background);
+        }
+    }
+}

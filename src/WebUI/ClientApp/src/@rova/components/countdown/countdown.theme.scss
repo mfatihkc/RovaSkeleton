@@ -1,0 +1,17 @@
+@mixin rova-countdown-theme($theme) {
+
+    $foreground: map-get($theme, foreground);
+
+    rova-countdown {
+
+        .rova-countdown {
+
+            .time {
+
+                .title {
+                    color: map-get($foreground, secondary-text);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+
+<div id="scheduler"  class="page-layout simple fullwidth">
+
+    <!-- HEADER -->
+    <div class="header accent p-24" fxLayout="row" fxLayoutAlign="start center">
+        <h2>Scheduler</h2>
+    </div>
+    <!-- / HEADER -->
+
+    <!-- CONTENT -->
+    <div class="content p-24">
+        <ejs-schedule  
+            [selectedDate]="selectedDate" 
+            [showTimeIndicator]=false 
+            startHour='08:00' height='100%'
+            [eventSettings]="eventSettings"
+            [views]="scheduleViews"> 
+        </ejs-schedule>
+    </div>
+    <!-- / CONTENT -->
+
+</div>

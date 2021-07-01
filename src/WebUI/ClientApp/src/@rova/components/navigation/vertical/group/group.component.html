@@ -1,0 +1,16 @@
+<ng-container *ngIf="!item.hidden">
+
+    <div class="group-title" [ngClass]="item.classes">
+        <span class="hint-text" [translate]="item.translate">{{(item.translate | translate) || item.title}}</span>
+    </div>
+
+    <div class="group-items">
+        <ng-container *ngFor="let item of item.children">
+            <rova-nav-vertical-group *ngIf="item.type=='group'" [item]="item"></rova-nav-vertical-group>
+            <rova-nav-vertical-collapsable *ngIf="item.type=='collapsable'"
+                                           [item]="item"></rova-nav-vertical-collapsable>
+            <rova-nav-vertical-item *ngIf="item.type=='item'" [item]="item"></rova-nav-vertical-item>
+        </ng-container>
+    </div>
+
+</ng-container>

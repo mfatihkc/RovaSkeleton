@@ -1,0 +1,40 @@
+<!-- PROGRESS BAR -->
+<rova-progress-bar></rova-progress-bar>
+<!-- / PROGRESS BAR -->
+
+<!-- VERTICAL LAYOUT 1 -->
+<ng-container *ngIf="rovaConfig.layout.style === 'vertical-layout-1'">
+    <vertical-layout-1></vertical-layout-1>
+</ng-container>
+<!-- / VERTICAL LAYOUT 1 -->
+
+<!-- VERTICAL LAYOUT 2 -->
+<ng-container *ngIf="rovaConfig.layout.style === 'vertical-layout-2'">
+    <vertical-layout-2></vertical-layout-2>
+</ng-container>
+<!-- / VERTICAL LAYOUT 2 -->
+
+<!-- VERTICAL LAYOUT 3 -->
+<ng-container *ngIf="rovaConfig.layout.style === 'vertical-layout-3'">
+    <vertical-layout-3></vertical-layout-3>
+</ng-container>
+<!-- / VERTICAL LAYOUT 3 -->
+
+<!-- HORIZONTAL LAYOUT 1 -->
+<ng-container *ngIf="rovaConfig.layout.style === 'horizontal-layout-1'">
+    <horizontal-layout-1></horizontal-layout-1>
+</ng-container>
+<!-- / HORIZONTAL LAYOUT 1 -->
+
+<!-- THEME OPTIONS PANEL -->
+<button mat-icon-button class="warn mat-elevation-z2 theme-options-button"
+        [ngClass]="{'right-side-panel': rovaConfig.layout.sidepanel.position === 'right',
+                    'side-panel-hidden': rovaConfig.layout.sidepanel.hidden === true}"
+        (click)="toggleSidebarOpen('themeOptionsPanel')">
+    <mat-icon>settings</mat-icon>
+</button>
+
+<rova-sidebar name="themeOptionsPanel" class="theme-options-sidebar" position="right" [invisibleOverlay]="true">
+    <rova-theme-options></rova-theme-options>
+</rova-sidebar>
+<!-- / THEME OPTIONS PANEL -->

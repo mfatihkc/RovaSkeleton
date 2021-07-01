@@ -1,0 +1,15 @@
+﻿:root {
+    --primaryColor: #868686;
+    --secondaryColor: #f4f4f4;
+    --bgMenuActive: #8e47a0;
+    --bgButton: #68217a;
+    --logoImageUrl: url('http://rova.electrocod.com/assets/images/logos/rova.svg');
+    --bgAside: var(--primaryColor);
+}
+
+.hc-aside.is-open .hc-aside__logo {
+    height: 10rem;
+    width: 11rem;
+    min-width: 4rem;
+    border-radius: 0;
+}
